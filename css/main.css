@@ -2,6 +2,7 @@ body {
   background: #454D54;
 }
 
+/*Inicia: Estilo para la NavBar*/
 nav.navbar-material {
   font-family: 'Comfortaa', cursive;
   font-weight: bold;
@@ -9,26 +10,125 @@ nav.navbar-material {
   border: none;
   box-shadow: none;
 }
-
 .navbar-material .nav-wrapper {
   background: #75AF18;
   margin: 20px;
 }
-
 .navbar-material .nav-wrapper > ul > li > a {
   color: black;
 }
-
 .navbar-material .nav-wrapper .brand-logo img {
   height: 64px;
 }
-
 .navbar-material .nav-wrapper .button-collapse i {
   color: black;
 }
-
 @media (max-width: 600px) {
   .navbar-material .nav-wrapper .brand-logo img {
     height: 56px;
   }
 }
+/*Termina: Estilo para la NavBar*/
+
+header{
+  font-family: 'Comfortaa', cursive;
+  background-image: url("../assets/img/fondoSobreMi.jpg");
+  background-size: cover;
+  /*height:600px;*/
+}
+
+/*img.fondoSobreMi{
+  opacity: 0.2;
+  filter: alpha(opacity=50);
+}*/
+
+/*Inicia: Para el efecto de la foto, en la seccion Sobre Mí*/
+.demo-3 {
+    position:relative;
+    width:500px;
+    height:300px;
+    overflow:hidden;
+    float:left;
+    margin-right:30px;
+}
+.demo-3 figure {
+    margin:0;
+    padding:0;
+    position:relative;
+    cursor:pointer;
+    margin-left:30px;
+}
+.demo-3 figure img {
+    display:block;
+    position:relative;
+    width: 500px;
+    height: 300px;
+    z-index:10;
+    margin:30px 0;
+}
+.demo-3 figure figcaption {
+    display:block;
+    position:absolute;
+    z-index:5;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.demo-3 figure h4 {
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 3px;
+    color:#fff;
+    text-align:left;
+}
+.demo-3 figure p {
+    display:block;
+    font-family: 'Comfortaa', cursive;
+    font-size:18px;
+    word-spacing: 0.4em;
+    letter-spacing: 1px;
+    line-height:22px;
+    margin:5;
+    color:#fff;
+    text-align:center;
+}
+.demo-3 figure figcaption {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding:10px 20px;
+    background-color:rgba(117,175,24,0.5);
+    text-align:center;
+    backface-visibility:hidden;
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s;
+}
+.demo-3 figure img {
+    backface-visibility:hidden;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s;
+}
+.demo-3 figure:hover img,figure.hover img {
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg);
+}
+.demo-3 figure:hover figcaption,figure.hover figcaption {
+    -webkit-transform:rotateY(0);
+    -moz-transform:rotateY(0);
+    transform:rotateY(0);
+}
+/*Termina: Para el efecto de la foto, en la seccion Sobre Mí*/
+
+
+
+/*Para el botoncillo de pasar a la siguiente Secion en Sobre Mí*/
+/*.siguienteSeccion{
+  display: flex;
+  justify-content: center;
+}*/
