@@ -1,134 +1,213 @@
+.miPresentacion{
+  background-image: linear-gradient( 135deg, #F05F57 0%, #360940 100%);
+}
+
 body {
-  background: #454D54;
-}
-
-/*Inicia: Estilo para la NavBar*/
-nav.navbar-material {
   font-family: 'Comfortaa', cursive;
-  font-weight: bold;
-  background: #75AF18;
-  border: none;
-  box-shadow: none;
-}
-.navbar-material .nav-wrapper {
-  background: #75AF18;
-  margin: 20px;
-}
-.navbar-material .nav-wrapper > ul > li > a {
-  color: black;
-}
-.navbar-material .nav-wrapper .brand-logo img {
-  height: 64px;
-}
-.navbar-material .nav-wrapper .button-collapse i {
-  color: black;
-}
-@media (max-width: 600px) {
-  .navbar-material .nav-wrapper .brand-logo img {
-    height: 56px;
-  }
-}
-/*Termina: Estilo para la NavBar*/
-
-header{
-  font-family: 'Comfortaa', cursive;
-  background-image: url("../assets/img/fondoSobreMi.jpg");
-  background-size: cover;
-  /*height:600px;*/
+  background-image: linear-gradient( 135deg, #FAD7A1 0%, #E96D71 100%);
 }
 
-/*img.fondoSobreMi{
-  opacity: 0.2;
-  filter: alpha(opacity=50);
+html {
+    font-size: 16px
+}
+
+header {
+    text-align: center;
+    padding: 2em;
+}
+
+header,
+main,
+footer {
+    padding-left: 240px;
+}
+
+header .logo {
+    margin-left: 20px
+}
+
+/*.botoncillo{
+  position: relative;
+  display: block;
 }*/
 
-/*Inicia: Para el efecto de la foto, en la seccion Sobre Mí*/
-.demo-3 {
-    position:relative;
-    width:500px;
-    height:300px;
-    overflow:hidden;
-    float:left;
-    margin-right:30px;
+.container {
+    position: relative;
+    width: 50%;
 }
-.demo-3 figure {
-    margin:0;
-    padding:0;
-    position:relative;
-    cursor:pointer;
-    margin-left:30px;
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
-.demo-3 figure img {
-    display:block;
-    position:relative;
-    width: 500px;
-    height: 300px;
-    z-index:10;
-    margin:30px 0;
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
 }
-.demo-3 figure figcaption {
-    display:block;
-    position:absolute;
-    z-index:5;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
+
+.container:hover .image {
+  opacity: 0.3;
 }
-.demo-3 figure h4 {
-    font-family: 'Comfortaa', cursive;
-    letter-spacing: 3px;
-    color:#fff;
-    text-align:left;
+
+.container:hover .middle {
+  opacity: 1;
 }
-.demo-3 figure p {
-    display:block;
-    font-family: 'Comfortaa', cursive;
-    font-size:18px;
-    word-spacing: 0.4em;
-    letter-spacing: 1px;
-    line-height:22px;
-    margin:5;
-    color:#fff;
-    text-align:center;
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }
-.demo-3 figure figcaption {
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    padding:10px 20px;
-    background-color:rgba(117,175,24,0.5);
-    text-align:center;
-    backface-visibility:hidden;
-    -webkit-transform:rotateY(-180deg);
-    -moz-transform:rotateY(-180deg);
-    transform:rotateY(-180deg);
-    -webkit-transition:all .5s;
-    -moz-transition:all .5s;
-    transition:all .5s;
+
+h1 {
+    font-size: 1.5rem;
+    line-height: 25px
 }
-.demo-3 figure img {
-    backface-visibility:hidden;
-    -webkit-transition:all .5s;
-    -moz-transition:all .5s;
-    transition:all .5s;
+
+header .btn-floating {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    top: 58px;
 }
-.demo-3 figure:hover img,figure.hover img {
-    -webkit-transform:rotateY(180deg);
-    -moz-transform:rotateY(180deg);
-    transform:rotateY(180deg);
+
+header nav {
+    box-shadow: none;
+    width: 100%;
 }
-.demo-3 figure:hover figcaption,figure.hover figcaption {
-    -webkit-transform:rotateY(0);
-    -moz-transform:rotateY(0);
-    transform:rotateY(0);
+
+header nav ul li a {
+    position: relative;
+    color: #fff;
+    letter-spacing: -1px;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.7rem;
+    margin: 0 25px;
 }
-/*Termina: Para el efecto de la foto, en la seccion Sobre Mí*/
+
+.button-collapse {
+    margin-left: 25px;
+}
+
+ul.side-nav.fixed a {
+    color: whitesmoke;
+}
+
+ul.side-nav.fixed a:hover {
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+section {
+    padding: 4% 0 4% 0;
+}
+
+#sobremi{
+  background-image: linear-gradient( 135deg, #FAD7A1 0%, #E96D71 100%);
+}
+
+#contacto{
+  background-image: linear-gradient( 135deg, #FAD7A1 0%, #E96D71 100%);
+}
+
+.delContacto{
+  background-color: #E3CEF6;
+}
 
 
-
-/*Para el botoncillo de pasar a la siguiente Secion en Sobre Mí*/
-/*.siguienteSeccion{
-  display: flex;
-  justify-content: center;
+/*.mitexto{
+  background-image: linear-gradient( 135deg, #FAD7A1 0%, #E96D71 100%);
 }*/
+
+#portafolio,
+#habilidades,
+#contacto {
+  background-image: linear-gradient( 135deg, #FAD7A1 0%, #E96D71 100%);
+    border-top: 8px solid rgba(0, 0, 0, 0.1);
+}
+
+section .col {
+    margin-bottom: 24px;
+}
+
+section h4 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+section hr {
+    width: 40px;
+    margin-bottom: 45px;
+    border: 1px solid
+}
+
+.portafolio .portafolio-holder {
+    clear: both;
+    text-align: center;
+}
+
+.portafolio img, .habilidades li {
+    -ms-filter: "progid:DXImageTransform@mixin Microsoft@mixin Alpha(Opacity=${iefactor})";
+    filter: "alpha(opacity=(${iefactor}))";
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+}
+
+.portafolio img {
+    width: 33%;
+    display: inline-block;
+    float: left;
+}
+
+.habilidades i {
+    color: #ee6e73;
+    font-size: 7rem;
+    display: block;
+}
+
+footer.page-footer {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+/*** RESPONSIVO ***/
+
+@media only screen and (max-width: 992px) {
+    header ul.side-nav li a {
+        font-size: 1.7rem
+    }
+    header,
+    main,
+    footer {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .portafolio img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 467px) {
+    .portafolio img {
+        width: 100%;
+    }
+}
